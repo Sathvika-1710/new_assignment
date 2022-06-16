@@ -1,0 +1,78 @@
+<form action="/login2/{{id}}/{{type}}" method="post" class="form" autocomplete="off" >
+        <form action="/employee" method="POST" class="form" autocomplete="off">
+           <h1 class="heading">Admin Login Form</h1>
+           </br>
+           </br>
+    
+
+            <label for="username">Admin Name</label>
+            <input class='input' type="text" placeholder="" name="username">
+            </br>
+
+
+            <label for="password">Password</label>
+            <input class='input' type="password" placeholder="" name="password">
+            </br>
+            
+            <div class="button">
+                <button id="submit" type="submit">Submit</button>
+                </br>
+        
+            </div>
+
+
+        </form>
+    </div>
+
+    <style>
+        .form {
+        max-width: 1000px;
+        margin: 2rem auto;
+       
+        padding: 2rem;
+
+    }
+
+    label {
+        display: block;
+        font-size: 2em;
+        font-weight: 400;
+        margin: 10px;
+    }
+
+    input {
+        display: block;
+
+    }
+
+    .input {
+        width: 600px;
+        margin:10px;
+        height: 35px;
+        
+    }
+
+    #submit {
+        transform: translate(20, 1000);
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .heading{
+        text-align: center;
+        font-size: 3em;
+        color: blueviolet;
+    }
+    .button{
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+        
+    }
+    #submit{
+        width: 70px;
+    
+    }
+    </style>

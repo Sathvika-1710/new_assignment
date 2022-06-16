@@ -1,0 +1,86 @@
+<div class="container">
+    <form action="/{{title}}/create" method="post" class="form" autocomplete="off" autofill="off">
+
+        <h1 class="heading">{{title}}</h1>
+        </br>
+
+
+        <label for="title">Enter the title</label>
+        <input class='input' type="text" placeholder="Should Consist of atmost 50 charecters" name="title">
+        </br>
+        <label for="content">Enter the content here</label>
+
+        <textarea class="textarea" name="content" rows="10" cols="90"></textarea>
+
+
+
+        <div class="button">
+            <button id="submit" type="submit">Submit</button>
+            </br>
+
+        </div>
+
+
+    </form>
+</div>
+
+<style>
+    .form {
+        max-width: 1000px;
+        margin: 2rem auto;
+
+        padding: 2rem;
+
+    }
+
+    label {
+        display: block;
+        font-size: 2em;
+        font-weight: 400;
+        margin: 10px;
+    }
+
+    input {
+        display: block;
+
+    }
+
+    .input {
+        width: 600px;
+        margin: 10px;
+        height: 35px;
+
+    }
+
+    #submit {
+        transform: translate(20, 1000);
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heading {
+        text-align: center;
+        font-size: 3em;
+        color: blueviolet;
+    }
+
+    .button {
+        display: flex;
+        justify-content: flex-start;
+
+
+    }
+
+    #submit {
+        width: 70px;
+
+    }
+    textarea
+{
+    overflow-y:scroll;
+}
+</style>

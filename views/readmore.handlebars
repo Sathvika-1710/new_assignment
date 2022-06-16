@@ -1,0 +1,37 @@
+<h1 class="heading">{{data.title}}</h1>
+<div class="para">
+<p class="paragraph">{{data.content}}</p>
+</div>
+<div class="buttons">
+   <button> <a href="/{{data._id}}/update/data" class="anchor">UPDATE</a></button>
+   <button><a href="/{{data._id}}/delete/data" class="anchor">DELETE</a></button>
+</div>
+<style>
+    .heading{
+        margin-top: 100px;
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 4em;
+        color:blueviolet;
+    }
+    .paragraph{
+        font-size:2em;
+        font-style: italic;
+
+    }
+    .anchor{
+        text-decoration: none;
+        font-size:1em;
+        color: black;
+    }
+    .buttons{
+        display: flex;
+        justify-content: space-around;
+    }
+    .para{
+        margin-left: 50px;
+        margin-right: 50px
+    }
+
+
+</style>
